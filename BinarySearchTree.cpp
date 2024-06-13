@@ -39,6 +39,11 @@ class BinaryTree
             Node* currentNode = nullptr;
             search(element,parent,currentNode); // locate the node which will bw the parent of the node to ins
 
+            if (parent == nullptr) // if the parent is NULL (tree is empty)
+            {
+                ROOT = newNode; // mark the new node as ROOT
+                return; // exit
+            }
            
        }
 };
