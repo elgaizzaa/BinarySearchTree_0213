@@ -1,5 +1,5 @@
 #include <iostream>
-#include < string>
+#include <string>
 using namespace std;
 
 class Node
@@ -161,9 +161,13 @@ int main()
         case '5':
         {
              return 0;
+              default:
+              {
+                  cout << "invalid option" << endl;
+                  break;
+              }
         }
-          default:
-           break;
+          
         }
     }  
 };
